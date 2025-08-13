@@ -1,0 +1,40 @@
+import java.util.*;
+class Book {
+    String tit;
+    String a;
+    int y;
+
+    
+    Book() {
+        tit = "Unknown";
+        a = "Unknown";
+        y = 0;
+    }
+
+    Book(String t, String m) {
+        tit = t;
+        a = m;
+        y = 0;
+    }
+
+    
+    Book(String t, String m, int r) {
+        tit = t;
+        a= m;
+        y = r;
+    }
+
+    void display() {
+        System.out.println("Title: " + tit + ", Author: " + a + ", Year: " + y);
+    }
+
+    public static void main(String[] args) {
+        Book b1 = new Book();
+        Book b2 = new Book("1984", "George Orwell");
+        Book b3 = new Book("The Hobbit", "J.R.R. Tolkien", 1937);
+
+        b1.display();
+        b2.display();
+        b3.display();
+    }
+}
