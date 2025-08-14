@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    String name;
+    int age;
+    Main(int age,String name){
+        this.age=age;
+        this.name=name;
+        System.out.println(name+" "+age);
+    }
+    public static void main(String[] args){
+        Scanner obj=new Scanner(System.in);
+        int ag=obj.nextInt();
+        obj.nextLine();
+        String nam=obj.nextLine();
+        Main o=new Main(ag,nam);
+        
+       
+    }
+}
