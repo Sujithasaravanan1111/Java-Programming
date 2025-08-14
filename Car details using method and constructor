@@ -3,17 +3,20 @@ public class Car{
     String model;
     int price;
     double disc;
+    double total;
     Car(int price,String model){
         this.price=price;
         this.model=model;
-        System.out.println(model+" "+price);
+        
     }
     void method(){
+        System.out.println(model+" "+price);
         System.out.println("Details:\n"+"Year:2005\n" +"Fuel type:Diesel\n");
     }
     void disc(){
         disc=(double)price* 0.5;
-        System.out.println("Discount: "+disc);
+        total=price-disc;
+        System.out.println("Price after Discount: "+total);
     }
     public static void main(String[] args){
         Scanner obj=new Scanner(System.in);
